@@ -2,10 +2,10 @@
   "name": "proyecto-guia-turistica",
   "version": "1.0.0",
   "description": "Aplicación Web con Web Components Nativos HTML",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pnpx servor src/ index.html 1234 --reload",
+    "dev": "servor . index.html 1234 --reload",
     "deploy": "gh-pages -d . --no-history"
   },
   "keywords": [],
