@@ -5,69 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuera del Mapa | Guía Turística CR</title>
     
+
     <link rel="stylesheet" href="./css/global.css">
 
-    <script type="module" src="./components/app-header.js"></script>
-    <script type="module" src="./components/destino-card.js"></script>
-
     <style>
-        /* Estilos temporales para organizar las tarjetas en la Fase 1 */
+       
+        #main-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         #contenedor-destinos {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            min-height: 200px;
         }
     </style>
 </head>
 <body>
 
-    <app-header active-region="Todas"></app-header>
+
 
     <main id="main-content">
         <section id="contenedor-destinos">
-            <destino-card 
-                destino-id="caribe-001" 
-                nombre="Parque Nacional Cahuita" 
-                region="Caribe" 
-                clasificacion="Clásico Imperdible"
-                imagen="assets/img/cahuita-portada.jpg">
-            </destino-card>
-
-            <destino-card 
-                destino-id="guanacaste-001" 
-                nombre="Playa Virador" 
-                region="Pacífico Norte" 
-                clasificacion="Joya Oculta"
-                imagen="assets/img/virador.jpg">
-            </destino-card>
-
-            <destino-card 
-                destino-id="central-002" 
-                nombre="San Gerardo de Dota" 
-                region="Central" 
-                clasificacion="Fuera del Circuito"
-                imagen="assets/img/dota.jpg">
-            </destino-card>
-
+           
+            <p style="text-align: center; color: #777;">
+                Contenido en preparación para la Fase 1...
+            </p>
         </section>
     </main>
 
-    <script>
-        // Listener para el evento de cambio de región
-        const header = document.querySelector('app-header');
-        header.addEventListener('region-selected', (e) => {
-            console.log("Filtro solicitado para:", e.detail.region);
-            // Esto se conectará con la lógica de carga dinámica en la Fase 2 
-        });
-
-        // Listener para el evento de selección de un destino
-        document.addEventListener('destino-selected', (e) => {
-            console.log("ID del destino seleccionado:", e.detail.id);
-            alert("Has seleccionado el destino con ID: " + e.detail.id);
-        });
-    </script>
+  
+    
 </body>
 </html>
